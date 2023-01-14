@@ -1,0 +1,5 @@
+Collecting git+https://github.com/minerllabs/minerl
+  Cloning https://github.com/minerllabs/minerl to /private/var/folders/9n/35v913ps23vf_hph4dd1l2800000gn/T/pip-req-build-bwpiwh33
+  Resolved https://github.com/minerllabs/minerl to commit 2c6bd771d5e8abe8bd890c7d48c155f180a240ba
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'error'
