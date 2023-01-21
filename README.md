@@ -1,6 +1,6 @@
 # MCSR-AI
 
-MCSR-AI is an AI agent that will attempt to assert AI supremacy in speedrunning Minecraft: Java Edition (version 1.16.1) Any% RSG. MCSR-AI cannot compete with humans on the Minecraft: Java Edition 1.16+ Any% Glitchless RSG leaderboard because it will not use a physical interface (therefore, all inputs are considered macros). Instead, it will begin and compete in a new category for agents that exist entirely virtually, called Minecraft: Java Edition 1.16+ Any% Glitchless RSG Virtual.
+MCSR-AI is an AI agent that will attempt to assert AI supremacy in speedrunning Minecraft: Java Edition (version 1.16.1) Any% RSG. MCSR-AI cannot compete with humans on the Minecraft: Java Edition 1.16+ Any% Glitchless RSG leaderboard because it will not use a physical interface (therefore, all inputs are considered macro-inputs). Instead, it will begin and compete in a new category for agents that exist entirely virtually, called Minecraft: Java Edition 1.16+ Any% Glitchless RSG Virtual.
 
 ## Rationale
 
