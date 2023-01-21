@@ -4,7 +4,7 @@ MCSR-AI is an AI agent that will attempt to assert AI supremacy in speedrunning 
 
 ## Rationale
 
-Minecraft speedrunning requires a diverse skill set. It combines fast reflexes, efficient and effective decision-making in short- and long-term environments, and deep knowledge of the environment. These attributes make Minecraft speedrunning an ideal environment to test AI's capabilities. The infinite complexity of Minecraft's game mechanics paired with speedrunning's incentives makes deep-learning approaches ideal in the future.
+Minecraft speedrunning requires a diverse skill set in humans. It combines fast reflexes, efficient and effective decision-making in short- and long-term environments, and deep knowledge of the game. These attributes make Minecraft speedrunning an ideal environment to test AI's capabilities. The complexity of Minecraft's game mechanics paired with speedrunning's time imperatives makes deep-learning approaches ideal in the future.
 
 ### Constraints
 
