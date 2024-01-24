@@ -1,21 +1,83 @@
 # MCSR-AI
 
-MCSR-AI is an AI agent that will attempt to assert AI supremacy in speedrunning Minecraft: Java Edition (version 1.16.1) Any% RSG. MCSR-AI cannot compete with humans on the Minecraft: Java Edition 1.16+ Any% Glitchless RSG leaderboard because it will not use a physical interface (therefore, all inputs are considered macro-inputs). Instead, it will begin and compete in a new category for agents that exist entirely virtually, called Minecraft: Java Edition 1.16+ Any% Glitchless RSG Virtual.
+MCSR-AI is an AI agent that will attempt to assert AI supremacy in speedrunning Minecraft.
 
-## Rationale
+MCSR-AI will simulate physical inputs that a human would be able to make.
 
-Minecraft speedrunning requires a diverse skill set in humans. It combines fast reflexes, efficient and effective decision-making in short- and long-term environments, and deep knowledge of the game. These attributes make Minecraft speedrunning an ideal environment to test AI's capabilities. The complexity of Minecraft's game mechanics paired with speedrunning's time imperatives makes deep-learning approaches ideal in the future.
+## Motivation
+
+Minecraft speedrunning requires a diverse skill set in humans. It combines fast reflexes, efficient and effective decision-making in short- and long-term environments, and deep knowledge of the game. These attributes make Minecraft speedrunning an ideal environment to test AI's capabilities.
 
 ### Constraints
 
-This project must effectively control all factors that do not demonstrate AI supremacy. 
+This project must control all factors that do not demonstrate AI supremacy. 
 
-* It only has access to information that a human player is able to collect in a speedrun (e.g. video and audio).
-* It only has access to inputs that a human player has access to in Minecraft (e.g. key inputs, cursor position).
+* The agent has video and audio sensors.
+* The agent has mouse and keyboard actuators.
 
 Server-side or client-side modifications will not be used, except for those specifed by Minecraft: Java Edition 1.16+ Any% Glitchless RSG Virtual rules. Packet injection will not be used.
 
-### Differences
+### Limitations
 
-AI agents are not constrained to sending inputs to the kernel with a physical interface, like humans are, and are able to send inputs to the kernel directly from their neural networks. Future AI agents may be designed to control physical inputs and interface with a physical device to further assert AI supremacy. In this project, however, MCSR-AI will control virtual devices+drivers. These devices will generate signals that will be processed by Minecraft: Java Edition (version 1.16.1)'s API.
+Our agent will not be constrained to sending inputs with keyboard and mouse. Instead, it will interact with virtual keyboard and mouse.
 
+## Design
+
+### Performance Measures
+
+The ultimate goal is to complete the game quickly. Thus, the simplest and ultimate performance measures are:
+
+1. Game completion
+2. Speed of game completion
+
+We will borrow from current Minecraft speedrunning practices in order to break the ultimate goal down into manageable pieces. 
+
+#### Performance measures in different environments
+
+An agent's goals will change as it progresses towards its ultimate goal of completing the game quickly. Later on, we will define different environments with different performance measures.
+
+### Environments
+
+Single-player Minecraft has three dimensions: overworld, nether, and end. Each dimension has different resources and threats.
+
+#### Overworld
+
+The agent spawns in the overworld. The agent should do several things in this specific stage:
+
+1. Get to the nether
+2. Gather sufficient food
+
+1. Wood
+2. Iron
+3. Obsidian
+4. Food
+
+ 
+
+1. partially observable
+2. single-agent
+3. stochastic
+4. dynamic/semi-dynamic
+5. continuous
+
+
+To complete Minecraft, an agent will distinct, partially-observable environments. 
+
+1. 
+
+
+
+#### Splits
+
+It will be beneficial to include other benchmarks to measure performance. Considering the distinct phases of the game, we can measure performance in __splits__.
+
+Split 1. From game start until first nether entry.
+Split 2. From first nether entry until bastion entry
+Split 3. From bastion exit until nether fortress entry.
+Split 4. From nether fortress entry until first blind travel.
+Split 5. From first blind travel until second nether re-entry.
+Split 6. From second nether re-entry until second blind travel.
+Split 7. From second blind travel until end dimension entry.
+Split 8. From end dimension entry until game completion screen.
+
+Splits allow us to measure the agent's performance in different environments and determine where the agent struggles.
